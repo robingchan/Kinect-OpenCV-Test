@@ -1,16 +1,16 @@
 #include "stdafx.h"
 
 #include <Windows.h>
-#include "MSR_NuiApi.h"
+#include "libkinect/inc/NuiApi.h"
 
 #include "opencv2\opencv.hpp"
 #include "opencv2\highgui\highgui.hpp"
 #include "opencv2\imgproc\imgproc.hpp"
 
-#pragma comment(lib, "MSRKinectNUI.lib")
-#pragma comment(lib, "opencv_core231.lib")
-#pragma comment(lib, "opencv_imgproc231.lib")
-#pragma comment(lib, "opencv_highgui231.lib")
+#pragma comment(lib, "libkinect/lib/x86/Kinect10.lib")
+#pragma comment(lib, "opencv_core240.lib")
+#pragma comment(lib, "opencv_imgproc240.lib")
+#pragma comment(lib, "opencv_highgui240.lib")
 
 DWORD WINAPI RGBImage( LPVOID lpParam );
 DWORD WINAPI DepthImage( LPVOID lpParam );
@@ -106,9 +106,9 @@ DWORD WINAPI DepthImage( LPVOID lpParam )
 
 		cvSetData( cvDepthImage, (unsigned char*) RGBDepth, cvDepthImage->widthStep );
 		//cvCvtColor( cvDepthImage, DepthEdges, CV_RGB2GRAY);
-		//cvCanny(  DepthEdges, DepthEdges2, 100, 100, 3 );
+		cvCanny(  cvDepthImage, DepthEdges2, 100, 100, 3 );
 		
-		cvShowImage( "Depth",  cvDepthImage );
+		cvShowImage( "Depth",  /*cvDepthImage*/ DepthEdges2 );
 		if ( cvWaitKey( 1 ) == 'x' ){ break; }
 
 		NuiImageStreamReleaseFrame( hStreams[1], DepthFrame );

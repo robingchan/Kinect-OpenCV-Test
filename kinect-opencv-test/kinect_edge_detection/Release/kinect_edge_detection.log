@@ -1,28 +1,28 @@
-﻿Build started 24/11/2011 20:23:10.
-     1>Project "C:\Users\Rob\Desktop\ked\kinect_edge_detection\kinect_edge_detection\kinect_edge_detection.vcxproj" on node 2 (build target(s)).
+﻿Build started 20/06/2012 11:09:33.
+     1>Project "C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\kinect_edge_detection\kinect_edge_detection.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Release\kinect_edge_detection.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          All outputs are up-to-date.
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Microsoft SDKs\\Kinect\v1.0 Beta2\inc\\" /IC:\OpenCV\opencv\build\include\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\kinect_edge_detection.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt kinect_edge_detection.cpp
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I\inc\ /IC:\Users\Rob\Documents\opencv\build\include\ /I"C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\kinect_edge_detection\libkinect\inc" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\kinect_edge_detection.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt kinect_edge_detection.cpp
          kinect_edge_detection.cpp
      1>kinect_edge_detection.cpp(34): warning C4482: nonstandard extension used: enum '_NUI_IMAGE_TYPE' used in qualified name
      1>kinect_edge_detection.cpp(34): warning C4482: nonstandard extension used: enum '_NUI_IMAGE_RESOLUTION' used in qualified name
      1>kinect_edge_detection.cpp(35): warning C4482: nonstandard extension used: enum '_NUI_IMAGE_TYPE' used in qualified name
      1>kinect_edge_detection.cpp(35): warning C4482: nonstandard extension used: enum '_NUI_IMAGE_RESOLUTION' used in qualified name
        Link:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rob\Desktop\ked\kinect_edge_detection\Release\kinect_edge_detection.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\Microsoft SDKs\\Kinect\v1.0 Beta2\lib\x86\\" /LIBPATH:C:\OpenCV\opencv\build\x86\vc10\lib\ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\kinect_edge_detection.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Rob\Desktop\ked\kinect_edge_detection\Release\kinect_edge_detection.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rob\Desktop\ked\kinect_edge_detection\Release\kinect_edge_detection.lib" /MACHINE:X86 Release\kinect_edge_detection.obj
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\Release\kinect_edge_detection.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:\lib\x86\ /LIBPATH:C:\Users\Rob\Documents\opencv\build\x86\vc10\lib\ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\kinect_edge_detection.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\Release\kinect_edge_detection.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\Release\kinect_edge_detection.lib" /MACHINE:X86 Release\kinect_edge_detection.obj
          Release\stdafx.obj
          Generating code
          Finished generating code
-         kinect_edge_detection.vcxproj -> C:\Users\Rob\Desktop\ked\kinect_edge_detection\Release\kinect_edge_detection.exe
+         kinect_edge_detection.vcxproj -> C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\Release\kinect_edge_detection.exe
        Manifest:
-         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Rob\Desktop\ked\kinect_edge_detection\Release\kinect_edge_detection.exe;#1" /manifest Release\kinect_edge_detection.exe.intermediate.manifest
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\Release\kinect_edge_detection.exe;#1" /manifest Release\kinect_edge_detection.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "Release\kinect_edge_detection.unsuccessfulbuild".
          Touching "Release\kinect_edge_detection.lastbuildstate".
-     1>Done Building Project "C:\Users\Rob\Desktop\ked\kinect_edge_detection\kinect_edge_detection\kinect_edge_detection.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\Rob\Dropbox\repos\Kinect-OpenCV-Test\kinect-opencv-test\kinect_edge_detection\kinect_edge_detection.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:04.49
+Time Elapsed 00:00:05.67
